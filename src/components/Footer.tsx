@@ -1,23 +1,22 @@
-import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 const footerLinks = {
   company: [
-    { name: 'La Sorgente', href: '#source' },
-    { name: 'La Nostra Storia', href: '#heritage' },
-    { name: 'Sostenibilità', href: '#sustainability' },
-    { name: 'Carriere', href: '#' },
+    { name: 'Our Source', href: '#source' },
+    { name: 'Our Water', href: '#purity' },
+    { name: 'Our Story', href: '#heritage' },
+    { name: 'Sustainability', href: '#sustainability' },
   ],
   products: [
-    { name: 'Acqua Naturale', href: '#' },
-    { name: 'Acqua Frizzante', href: '#' },
-    { name: 'Linea Premium', href: '#' },
-    { name: 'Horeca', href: '#' },
+    { name: 'Still Water 750ml', href: '#' },
+    { name: 'Sparkling Water 750ml', href: '#' },
+    { name: 'Home Delivery', href: '#' },
+    { name: 'Collection', href: '#' },
   ],
   support: [
-    { name: 'Contatti', href: '#contact' },
-    { name: 'FAQ', href: '#' },
-    { name: 'Dove Trovarci', href: '#' },
-    { name: 'Press Kit', href: '#' },
+    { name: 'Contact', href: '#contact' },
+    { name: 'Delivery Areas', href: '#contact' },
+    { name: 'Opening Hours', href: '#contact' },
   ],
 };
 
@@ -25,7 +24,6 @@ const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Instagram, href: '#', label: 'Instagram' },
   { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Youtube, href: '#', label: 'YouTube' },
 ];
 
 const Footer = () => {
@@ -41,15 +39,15 @@ const Footer = () => {
               className="font-serif text-2xl font-light tracking-wider"
               style={{ color: 'hsl(45 30% 96%)' }}
             >
-              ACQUA <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>PURA</span>
+              PEAR TREE <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>WELL</span>
             </a>
             <p 
               className="mt-4 max-w-sm font-sans text-sm leading-relaxed"
               style={{ color: 'hsla(45, 30%, 96%, 0.6)' }}
             >
-              Dal 1892, portiamo sulle vostre tavole la purezza delle Dolomiti. 
-              Un'acqua minerale naturale di qualità superiore, nel rispetto 
-              dell'ambiente e delle generazioni future.
+              Locally sourced natural mineral water from the heart of the High Weald. 
+              The only mineral water bottled at source in Sussex. Pure, natural, 
+              and unadulterated.
             </p>
 
             {/* Social Links */}
@@ -77,7 +75,7 @@ const Footer = () => {
               className="font-sans text-xs uppercase tracking-[0.2em]"
               style={{ color: 'hsl(45 30% 96%)' }}
             >
-              Azienda
+              Company
             </h4>
             <ul className="mt-6 space-y-3">
               {footerLinks.company.map((link) => (
@@ -99,7 +97,7 @@ const Footer = () => {
               className="font-sans text-xs uppercase tracking-[0.2em]"
               style={{ color: 'hsl(45 30% 96%)' }}
             >
-              Prodotti
+              Products
             </h4>
             <ul className="mt-6 space-y-3">
               {footerLinks.products.map((link) => (
@@ -121,7 +119,7 @@ const Footer = () => {
               className="font-sans text-xs uppercase tracking-[0.2em]"
               style={{ color: 'hsl(45 30% 96%)' }}
             >
-              Supporto
+              Support
             </h4>
             <ul className="mt-6 space-y-3">
               {footerLinks.support.map((link) => (
@@ -148,7 +146,7 @@ const Footer = () => {
             className="font-sans text-xs"
             style={{ color: 'hsla(45, 30%, 96%, 0.4)' }}
           >
-            © 2024 Acqua Pura S.p.A. Tutti i diritti riservati.
+            © 2024 Pear Tree Well Ltd. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a 
@@ -170,7 +168,7 @@ const Footer = () => {
               className="font-sans text-xs transition-colors"
               style={{ color: 'hsla(45, 30%, 96%, 0.4)' }}
             >
-              Termini e Condizioni
+              Terms & Conditions
             </a>
           </div>
         </div>

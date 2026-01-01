@@ -5,23 +5,23 @@ import { Droplets, Mountain, Leaf, Award } from 'lucide-react';
 const features = [
   {
     icon: Droplets,
-    title: 'Purezza Assoluta',
-    description: 'Filtrata naturalmente attraverso rocce millenarie, la nostra acqua raggiunge standard di purezza eccezionali.',
+    title: 'Pure & Natural',
+    description: 'No surface water contamination possible. Confined beneath solid rock for thousands of years.',
   },
   {
     icon: Mountain,
-    title: 'Origine Alpina',
-    description: 'Dalla sorgente protetta nelle Dolomiti, ogni bottiglia porta con sé l\'essenza delle montagne.',
+    title: 'High Weald Origin',
+    description: 'The only mineral water bottled at source in Sussex, from the heart of the High Weald.',
   },
   {
     icon: Leaf,
-    title: 'Sostenibilità',
-    description: 'Impegno costante per ridurre l\'impatto ambientale con vetro riciclabile e energia rinnovabile.',
+    title: 'Rich in Minerals',
+    description: 'Naturally rich in 16+ minerals and trace elements, giving it a fuller, rounder flavour.',
   },
   {
     icon: Award,
-    title: 'Qualità Certificata',
-    description: 'Riconoscimenti internazionali attestano l\'eccellenza della nostra acqua minerale naturale.',
+    title: 'Balanced pH',
+    description: 'A balanced pH of 7.2, important for optimal health and a smooth taste profile.',
   },
 ];
 
@@ -48,23 +48,24 @@ const PuritySection = () => {
             className="font-sans text-xs uppercase tracking-[0.3em]"
             style={{ color: 'hsl(38 55% 50%)' }}
           >
-            La Nostra Promessa
+            Our Water
           </span>
           
           <h2 
             className="mt-4 font-serif text-3xl leading-tight md:text-5xl"
             style={{ color: 'hsl(45 30% 96%)' }}
           >
-            <span className="italic">Purezza,</span> naturalità <br />
-            e rispetto per la <span style={{ color: 'hsl(38 55% 50%)' }}>terra</span>
+            <span className="italic">Because water</span> is <br />
+            just water, <span style={{ color: 'hsl(38 55% 50%)' }}>right?</span>
           </h2>
 
           <p 
             className="mt-6 font-sans"
             style={{ color: 'hsla(45, 30%, 96%, 0.7)' }}
           >
-            Ogni aspetto della nostra produzione è guidato dal rispetto per l'ambiente 
-            e dalla ricerca dell'eccellenza qualitativa.
+            At Pear Tree Well, we don't agree. In a world where chemicals pollute 
+            the water, our bodies and our planet, this is the kind of product 
+            that people need and want.
           </p>
         </motion.div>
 
@@ -121,15 +122,15 @@ const PuritySection = () => {
             className="text-center font-serif text-2xl"
             style={{ color: 'hsl(45 30% 96%)' }}
           >
-            Composizione <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>Minerale</span>
+            Typical <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>Analysis</span>
           </h3>
           
           <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4">
             {[
-              { mineral: 'Calcio', value: '78 mg/l' },
-              { mineral: 'Magnesio', value: '24 mg/l' },
-              { mineral: 'Potassio', value: '1.5 mg/l' },
-              { mineral: 'Sodio', value: '2.8 mg/l' },
+              { mineral: 'Calcium', value: '200 mg/l' },
+              { mineral: 'Magnesium', value: '70.4 mg/l' },
+              { mineral: 'Potassium', value: '5.5 mg/l' },
+              { mineral: 'Silicon', value: '8.7 mg/l' },
             ].map((item) => (
               <div key={item.mineral} className="text-center">
                 <span 
@@ -152,7 +153,7 @@ const PuritySection = () => {
             className="mt-8 text-center font-sans text-xs uppercase tracking-wider"
             style={{ color: 'hsla(45, 30%, 96%, 0.4)' }}
           >
-            Residuo fisso a 180°C: 280 mg/l • pH 7.4
+            16+ Natural Minerals & Trace Elements • pH 7.2 • Values may vary due to natural variation
           </p>
         </motion.div>
       </div>

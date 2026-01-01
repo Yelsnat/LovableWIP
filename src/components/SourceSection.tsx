@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import sourceCave from '@/assets/source-cave.jpg';
 
@@ -7,7 +7,7 @@ const SourceSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="source" className="relative overflow-hidden bg-section-light">
+    <section id="source" className="relative overflow-hidden bg-secondary">
       <div className="container mx-auto px-6 py-24 md:py-32">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Image */}
@@ -23,12 +23,12 @@ const SourceSection = () => {
               alt="Underground spring source"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-section-dark/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             
             {/* Floating label */}
             <div className="absolute bottom-8 left-8 right-8">
-              <span className="inline-block bg-cream/90 px-4 py-2 font-sans text-xs uppercase tracking-[0.2em] text-primary backdrop-blur-sm">
-                La Sorgente
+              <span className="inline-block bg-secondary/90 px-4 py-2 font-sans text-xs uppercase tracking-[0.2em] text-primary backdrop-blur-sm">
+                Our Source
               </span>
             </div>
           </motion.div>
@@ -40,48 +40,51 @@ const SourceSection = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-lg"
           >
-            <span className="font-sans text-xs uppercase tracking-[0.3em] text-gold">
-              L'Origine
+            <span 
+              className="font-sans text-xs uppercase tracking-[0.3em]"
+              style={{ color: 'hsl(38 55% 50%)' }}
+            >
+              The Origin
             </span>
             
             <h2 className="mt-4 font-serif text-3xl leading-tight text-primary md:text-5xl">
-              Un viaggio di <br />
-              <span className="italic">mille anni</span> <br />
-              attraverso la roccia
+              120 feet deep, <br />
+              <span className="italic">beneath</span> 5 feet <br />
+              of <span style={{ color: 'hsl(38 55% 50%)' }}>solid rock</span>
             </h2>
 
             <div className="mt-8 space-y-6 font-sans text-muted-foreground">
               <p>
-                A 1.200 metri di altitudine, nel cuore delle Dolomiti, la nostra 
-                sorgente emerge da profondità inaccessibili. L'acqua compie un 
-                viaggio millenario attraverso strati di roccia calcarea, 
-                arricchendosi naturalmente di minerali preziosi.
+                Our water comes from a source 120 feet deep and confined beneath 
+                a 5 ft thick layer of rock. No surface water can possibly 
+                contaminate it.
               </p>
               <p>
-                Questo processo naturale di filtrazione garantisce una purezza 
-                assoluta, preservando un equilibrio minerale unico che rende 
-                la nostra acqua inconfondibile al palato.
+                When the water is drawn from the well, it is the first time it 
+                has seen the light of day for many thousands of years—truly pure 
+                and unadulterated. This water is nature's own creation, something 
+                water barons can only dream about.
               </p>
             </div>
 
             {/* Stats */}
             <div className="mt-12 grid grid-cols-3 gap-8 border-t border-border pt-8">
               <div>
-                <span className="font-serif text-3xl text-gold md:text-4xl">1200</span>
+                <span className="font-serif text-3xl md:text-4xl" style={{ color: 'hsl(38 55% 50%)' }}>120</span>
                 <p className="mt-1 font-sans text-xs uppercase tracking-wider text-muted-foreground">
-                  Metri altitudine
+                  Feet Deep
                 </p>
               </div>
               <div>
-                <span className="font-serif text-3xl text-gold md:text-4xl">7°</span>
+                <span className="font-serif text-3xl md:text-4xl" style={{ color: 'hsl(38 55% 50%)' }}>5ft</span>
                 <p className="mt-1 font-sans text-xs uppercase tracking-wider text-muted-foreground">
-                  Temperatura costante
+                  Rock Layer
                 </p>
               </div>
               <div>
-                <span className="font-serif text-3xl text-gold md:text-4xl">130</span>
+                <span className="font-serif text-3xl md:text-4xl" style={{ color: 'hsl(38 55% 50%)' }}>1000s</span>
                 <p className="mt-1 font-sans text-xs uppercase tracking-wider text-muted-foreground">
-                  Anni di storia
+                  Years Old
                 </p>
               </div>
             </div>
@@ -90,7 +93,7 @@ const SourceSection = () => {
               href="#purity"
               className="mt-10 inline-flex items-center gap-2 border border-primary bg-primary px-8 py-4 font-sans text-xs uppercase tracking-[0.2em] text-primary-foreground transition-all hover:bg-transparent hover:text-primary"
             >
-              Scopri la Purezza
+              Discover Our Water
             </a>
           </motion.div>
         </div>

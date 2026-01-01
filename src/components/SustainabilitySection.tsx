@@ -1,28 +1,28 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Recycle, Sun, Droplet, TreePine } from 'lucide-react';
+import { Recycle, Droplet, Truck, Heart } from 'lucide-react';
 import sustainabilityImg from '@/assets/sustainability.jpg';
 
 const initiatives = [
   {
     icon: Recycle,
     stat: '100%',
-    label: 'Vetro riciclabile',
-  },
-  {
-    icon: Sun,
-    stat: '100%',
-    label: 'Energia rinnovabile',
+    label: 'Glass bottles',
   },
   {
     icon: Droplet,
     stat: '0',
-    label: 'Sprechi idrici',
+    label: 'Chemicals added',
   },
   {
-    icon: TreePine,
-    stat: '50k',
-    label: 'Alberi piantati',
+    icon: Truck,
+    stat: 'Local',
+    label: 'Delivery only',
+  },
+  {
+    icon: Heart,
+    stat: 'Pure',
+    label: 'Natural source',
   },
 ];
 
@@ -65,27 +65,27 @@ const SustainabilitySection = () => {
               className="font-sans text-xs uppercase tracking-[0.3em]"
               style={{ color: 'hsl(38 55% 50%)' }}
             >
-              Sostenibilità
+              Sustainability
             </span>
             
             <h2 
               className="mt-4 font-serif text-3xl leading-tight md:text-5xl"
               style={{ color: 'hsl(45 30% 96%)' }}
             >
-              Custodi della <span className="italic">natura</span>
+              The kind of <span className="italic">safe</span>
               <br />
-              per le <span style={{ color: 'hsl(38 55% 50%)' }}>generazioni</span>
+              product that <span style={{ color: 'hsl(38 55% 50%)' }}>people</span>
               <br />
-              future
+              need and want
             </h2>
 
             <p 
               className="mt-6 font-sans"
               style={{ color: 'hsla(45, 30%, 96%, 0.7)' }}
             >
-              Il nostro impegno per l'ambiente va oltre le parole. Ogni decisione 
-              aziendale è guidata dal rispetto per la terra che ci dona questa 
-              acqua straordinaria.
+              In a world where chemicals pollute the water, our bodies and our 
+              planet, we're committed to providing pure, natural mineral water 
+              with minimal environmental impact.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-6">
@@ -132,11 +132,11 @@ const SustainabilitySection = () => {
                 color: 'hsl(195 50% 10%)'
               }}
             >
-              Il Nostro Impegno
+              Order Now
             </a>
           </motion.div>
 
-          {/* Certifications */}
+          {/* Commitment Box */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -154,18 +154,18 @@ const SustainabilitySection = () => {
                 className="font-serif text-2xl"
                 style={{ color: 'hsl(45 30% 96%)' }}
               >
-                Certificazioni <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>Ambientali</span>
+                Our <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>Commitment</span>
               </h3>
 
               <div className="mt-8 space-y-6">
                 {[
-                  { name: 'ISO 14001', desc: 'Sistema di gestione ambientale' },
-                  { name: 'EMAS', desc: 'Eco-Management and Audit Scheme' },
-                  { name: 'Carbon Neutral', desc: 'Certificazione neutralità carbonica' },
-                  { name: 'B Corp', desc: 'Impatto sociale e ambientale positivo' },
-                ].map((cert, i, arr) => (
+                  { name: 'Bottled at Source', desc: 'The only mineral water bottled at source in Sussex' },
+                  { name: 'Glass Packaging', desc: 'Premium glass bottles, fully recyclable' },
+                  { name: 'Local Delivery', desc: 'Serving Sussex communities with fortnightly delivery' },
+                  { name: 'No Additives', desc: 'Pure and unadulterated—nothing added, nothing removed' },
+                ].map((item, i, arr) => (
                   <div 
-                    key={cert.name} 
+                    key={item.name} 
                     className="flex items-start gap-4 border-b pb-4"
                     style={{ borderColor: i === arr.length - 1 ? 'transparent' : 'hsla(45, 30%, 96%, 0.1)' }}
                   >
@@ -178,13 +178,13 @@ const SustainabilitySection = () => {
                         className="font-sans text-sm font-medium"
                         style={{ color: 'hsl(45 30% 96%)' }}
                       >
-                        {cert.name}
+                        {item.name}
                       </span>
                       <p 
                         className="mt-1 font-sans text-xs"
                         style={{ color: 'hsla(45, 30%, 96%, 0.5)' }}
                       >
-                        {cert.desc}
+                        {item.desc}
                       </p>
                     </div>
                   </div>

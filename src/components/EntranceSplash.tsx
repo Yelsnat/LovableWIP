@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import heroSpring from '@/assets/hero-spring.jpg';
 
@@ -47,16 +47,16 @@ const EntranceSplash = ({ onEnter }: EntranceSplashProps) => {
               transition={{ delay: 0.3, duration: 1 }}
             >
               <h1 
-                className="font-serif text-5xl font-light tracking-wider md:text-7xl"
+                className="font-serif text-4xl font-light tracking-wider md:text-6xl lg:text-7xl"
                 style={{ color: 'hsl(45 30% 96%)' }}
               >
-                ACQUA <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>PURA</span>
+                PEAR TREE <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>WELL</span>
               </h1>
               <p 
                 className="mt-4 font-sans text-sm uppercase tracking-[0.3em]"
                 style={{ color: 'hsla(45, 30%, 96%, 0.7)' }}
               >
-                Natural Spring Water Since 1892
+                Natural Mineral Water from Sussex
               </p>
             </motion.div>
 

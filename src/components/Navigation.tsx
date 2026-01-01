@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
-  { name: 'La Sorgente', href: '#source' },
-  { name: 'Purezza', href: '#purity' },
-  { name: 'Tradizione', href: '#heritage' },
-  { name: 'Sostenibilità', href: '#sustainability' },
-  { name: 'Contatti', href: '#contact' },
+  { name: 'Our Source', href: '#source' },
+  { name: 'Our Water', href: '#purity' },
+  { name: 'Our Story', href: '#heritage' },
+  { name: 'Sustainability', href: '#sustainability' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const Navigation = () => {
@@ -40,10 +40,10 @@ const Navigation = () => {
           {/* Logo */}
           <a 
             href="#" 
-            className="font-serif text-2xl font-light tracking-wider"
+            className="font-serif text-xl font-light tracking-wider md:text-2xl"
             style={{ color: 'hsl(45 30% 96%)' }}
           >
-            ACQUA <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>PURA</span>
+            PEAR TREE <span className="italic" style={{ color: 'hsl(38 55% 50%)' }}>WELL</span>
           </a>
 
           {/* Desktop Navigation */}

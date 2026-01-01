@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroSpring}
-          alt="Natural mountain spring"
+          alt="Natural spring in the High Weald"
           className="h-full w-full object-cover"
         />
         <div 
@@ -42,26 +42,26 @@ const HeroSection = () => {
             className="font-sans text-xs uppercase tracking-[0.3em]"
             style={{ color: 'hsl(38 55% 50%)' }}
           >
-            Dal cuore delle Alpi
+            From the Heart of the High Weald
           </span>
           
           <h1 
             className="mt-6 font-serif text-4xl font-light leading-tight md:text-6xl lg:text-7xl"
             style={{ color: 'hsl(45 30% 96%)' }}
           >
-            Purezza che <br />
-            <span className="italic">sgorga dalla</span>
+            Nature's own <br />
+            <span className="italic">creation,</span> pure
             <br />
-            <span style={{ color: 'hsl(38 55% 50%)' }}>natura</span>
+            <span style={{ color: 'hsl(38 55% 50%)' }}>& unadulterated</span>
           </h1>
 
           <p 
             className="mt-8 font-sans text-base leading-relaxed md:text-lg"
             style={{ color: 'hsla(45, 30%, 96%, 0.7)' }}
           >
-            Da oltre un secolo, la nostra sorgente alpina offre un'acqua 
-            minerale di purezza ineguagliabile. Ogni goccia racconta la storia 
-            millenaria delle rocce che l'hanno filtrata.
+            Locally sourced natural mineral water from Sussex. Our water comes 
+            from 120 feet deep, confined beneath rock—seeing daylight for the 
+            first time in thousands of years.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-6">
@@ -84,14 +84,14 @@ const HeroSection = () => {
                 e.currentTarget.style.color = 'hsl(45 30% 96%)';
               }}
             >
-              Scopri la Sorgente
+              Discover Our Source
             </a>
             <a
               href="#heritage"
               className="link-underline inline-flex items-center gap-2 font-sans text-xs uppercase tracking-[0.2em] transition-colors"
               style={{ color: 'hsla(45, 30%, 96%, 0.7)' }}
             >
-              La Nostra Storia
+              Our Story
             </a>
           </div>
         </motion.div>
@@ -110,7 +110,7 @@ const HeroSection = () => {
             />
             <img
               src={bottleHero}
-              alt="Acqua Pura bottle"
+              alt="Pear Tree Well bottle"
               className="relative z-10 h-[600px] w-auto object-contain drop-shadow-2xl"
             />
           </div>
@@ -129,7 +129,7 @@ const HeroSection = () => {
             className="font-sans text-xs uppercase tracking-[0.2em]"
             style={{ color: 'hsla(45, 30%, 96%, 0.5)' }}
           >
-            Scorri
+            Scroll
           </span>
           <div 
             className="animate-scroll-hint h-12 w-px"
