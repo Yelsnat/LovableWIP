@@ -60,22 +60,22 @@ const EntranceSplash = ({ onEnter }: EntranceSplashProps) => {
               </p>
               
               {/* Taglines */}
-              <div className="mt-8 flex flex-col gap-3">
+              <div className="mt-8 flex flex-col gap-2">
                 <p 
-                  className="font-sans text-base md:text-lg uppercase tracking-wide"
-                  style={{ color: 'hsl(38 55% 50%)' }}
+                  className="font-sans text-sm md:text-base italic"
+                  style={{ color: 'hsla(45, 30%, 96%, 0.8)' }}
                 >
                   Born in the heart of the High Weald.
                 </p>
                 <p 
-                  className="font-sans text-base md:text-lg uppercase tracking-wide"
-                  style={{ color: 'hsl(38 55% 50%)' }}
+                  className="font-sans text-sm md:text-base italic"
+                  style={{ color: 'hsla(45, 30%, 96%, 0.8)' }}
                 >
                   Bottled at source from a 120ft deep aquifer.
                 </p>
                 <p 
-                  className="font-sans text-base md:text-lg uppercase tracking-wide"
-                  style={{ color: 'hsl(38 55% 50%)' }}
+                  className="font-sans text-sm md:text-base italic"
+                  style={{ color: 'hsla(45, 30%, 96%, 0.8)' }}
                 >
                   Delivered to your table with untouched purity.
                 </p>
