@@ -5,8 +5,6 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // GitHub Pages base path - change 'pear-tree-well' to your repo name
-  base: '/pear-tree-well/',
   server: {
     host: "::",
     port: 8080,
